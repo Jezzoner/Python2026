@@ -10,3 +10,5 @@ print('\n\nRecorremos la lista de frutas:')
 frutas = ['Plátano', 'Fresa', 'Mango', 'Uva', 'Melon']
 for fruta in frutas:
     print(fruta, end=', ')
+
+#prueba
