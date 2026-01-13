@@ -13,9 +13,9 @@ password = int(input("Ingrese su password: "))
 #Logica
 if usuario == USUARIO_VALIDO and password == PASSWORD_VALIDO:
    print("Ingreso Exitoso, Bienvenido al sistema")
-elif usuario != USUARIO_VALIDO and password == PASSWORD_VALIDO:
-   print("Usuario invalido")
-elif password != PASSWORD_VALIDO and usuario == USUARIO_VALIDO:
+elif usuario == USUARIO_VALIDO:
    print("Password invalido")
+elif password == PASSWORD_VALIDO:
+   print("Usuario invalido")
 else:
    print("Usuario y Password invalidos")
