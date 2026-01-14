@@ -10,3 +10,5 @@ if not miedo and edad >= 10:
     print("Puedes ingresar...")
 else:
     print("No puedes ingresar...")
+
+#Comentario de la Rama1
