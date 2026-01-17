@@ -8,3 +8,5 @@ for servidor in servidores:
    print(servidor, end='\n')
    if servidor in ("192.168.1.20"):
       print(servidor, "¡Error de conexión!")
+
+#desde la computadora
