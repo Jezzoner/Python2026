@@ -5,4 +5,6 @@ print("="*40)
 servidores = ["192.168.1.10", "192.168.1.11", "192.168.1.20", "192.168.1.50"]
 
 for servidor in servidores:
-   print(servidor, end=', ')
+   print(servidor, end='\n')
+   if servidor in ("192.168.1.20"):
+      print(servidor, "¡Error de conexión!")
