@@ -6,5 +6,3 @@ servidores = ["192.168.1.10", "192.168.1.11", "192.168.1.20", "192.168.1.50"]
 
 for servidor in servidores:
    print(servidor, end=', ')
-
-#creacion de rama remota
