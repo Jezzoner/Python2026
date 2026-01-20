@@ -2,9 +2,9 @@ print('*** Diccionarios en Python ***')
 
 # Creamos un dict de persona con clave y valor
 persona = {
-    'nombre': 'Sergio',
-    'edad': 30,
-    'ciudad': 'México'
+   'nombre': 'Sergio',
+   'edad': 30,
+   'ciudad': 'México'
 }
 print(f'Diccionario de persona: {persona}')
 
