@@ -25,18 +25,18 @@ print(inventario)
 busqueda_id = int(input("Ingresa el ID del producto a buscar: "))
 busqueda = inventario[busqueda_id] 
 
-print(f'''Informacion del producto encontrado:
-id: {busqueda_id}      
+print(f'''Informacion del producto encontrado:\n
+      id: {busqueda_id}      
       Nombre: {busqueda['nombre'].capitalize()}
-      Precio: {busqueda['precio']:.2f}
+      Precio: ${busqueda['precio']:.2f}
       Cantidad: {busqueda['cantidad']}
       ''')
 
 print("-"*3, "Inventario Detallado Actualizado", "-"*3)
 for producto in inventario:
    print(f'''
-         id: {producto['id']}
-         Nombre: {producto['nombre'].capitalize()}
-         Precio: ${producto['precio']:.2f}
-         Cantidad: {producto['cantidad']}
-         ''')  
+      id: {producto['id']}
+      Nombre: {producto['nombre'].capitalize()}
+      Precio: ${producto['precio']:.2f}
+      Cantidad: {producto['cantidad']}
+      ''')  
