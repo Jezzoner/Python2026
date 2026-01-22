@@ -8,7 +8,7 @@ inventario = []
 cant_agregar = int(input("Cuantos productos deseas agregar al inventario: "))
 
 for i in range(cant_agregar):
-   print(f"Proporciona los valores del producto {i+1}")
+   print(f"\nProporciona los valores del producto {i+1}")
    nombre = input("Nombre: ")
    precio = float(input("Precio: "))
    cantidad = int(input("Cantidad: "))
@@ -20,22 +20,31 @@ for i in range(cant_agregar):
       }
    inventario.append(producto)
 
-print(inventario)
+print("\nIntentario inicial:",inventario)
 
-busqueda_id = int(input("Ingresa el ID del producto a buscar: "))
-busqueda = inventario[busqueda_id] 
+busqueda_id = int(input("\nIngresa el ID del producto a buscar: "))
+busqueda = None
 
-print(f'''Informacion del producto encontrado:\n
-      id: {busqueda_id}      
+for producto in inventario:
+   if producto['id'] == busqueda_id:
+      busqueda = producto
+      break
+
+if busqueda is not None:
+   print(f'''\nInformacion del producto encontrado:\n
+      ID: {busqueda['id']}      
       Nombre: {busqueda['nombre'].capitalize()}
       Precio: ${busqueda['precio']:.2f}
       Cantidad: {busqueda['cantidad']}
       ''')
+else:
+   print(f"\nProducto con ID {busqueda_id} NO encontrado\n")
+
 
 print("-"*3, "Inventario Detallado Actualizado", "-"*3)
 for producto in inventario:
    print(f'''
-      id: {producto['id']}
+      ID: {producto['id']}
       Nombre: {producto['nombre'].capitalize()}
       Precio: ${producto['precio']:.2f}
       Cantidad: {producto['cantidad']}
