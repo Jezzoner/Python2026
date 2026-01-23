@@ -1,5 +1,10 @@
 class Persona:
 
+   #Constructor
+   def __init__(self, nombre, apellido):
+      self.nombre = nombre
+      self.apellido = apellido
+
    def inicializar_persona(self, nombre, apellido):
       self.nombre = nombre
       self.apellido = apellido
@@ -10,10 +15,8 @@ class Persona:
             Apellido: {self.apellido}''')
 
 if __name__ == "__main__":
-   persona1 = Persona()
-   persona1.inicializar_persona('Layla','Acosta')
+   persona1 = Persona('Layla','Acosta')
    persona1.mostrar_persona()
 
-   persona2 = Persona()
-   persona2.inicializar_persona('Ian', 'Sanchez')
+   persona2 = Persona('Ian', 'Sanchez')
    persona2.mostrar_persona()
