@@ -77,7 +77,7 @@ if __name__ == "__main__":
       4. Salir''')
       opcion = int(input("Proporciona una opcion (1-4): "))
       if opcion == 1:
-         print(mostrar_inventario())
+         mostrar_inventario()
       elif opcion == 2:
          agregar_nuevo_producto()
       elif opcion == 3:
