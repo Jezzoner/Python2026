@@ -1,6 +1,10 @@
-print("="*40)
-print("*"*5, "Calculadora con Funciones", "*"*5)
-print("="*40)
+from art import text2art
+
+art = text2art('Calculadora')
+
+print("="*70)
+print(art)
+print("="*70)
 
 def mostrar_menu():
    print('''\nOperaciones que puedes realizar:    

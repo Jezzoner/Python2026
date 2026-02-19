@@ -5,3 +5,4 @@ texto = input("Ingresa el texto: ")
 art = text2art(texto)
 
 print(art)
+
