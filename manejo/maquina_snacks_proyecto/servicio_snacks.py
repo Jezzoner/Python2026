@@ -16,7 +16,7 @@ class ServicioSnacks:
       snack_iniciales = [
          Snack('Papas', 70),
          Snack('Refresco', 50),
-         Snack('Sandwich', 120),
+         Snack('Sandwich', 120)
       ]
       self.snacks.extend(snack_iniciales)
       self.guardar_snacks_archivo(snack_iniciales)
@@ -41,23 +41,14 @@ class ServicioSnacks:
          print(f"Error al leer archivo de snacks: {e}")
       return snacks
 
-
-      print(f"\nSnacks disponibles:\n")
-      for snack in self.snacks:
-         self.obtener_snacks(snack)
-
    def agregar_snack(self, snack):
       self.snacks.append(snack)
       self.guardar_snacks_archivo([snack])
 
-   def mostrar_snacks(self, snack):
+   def mostrar_snacks(self):
       print(f"--- Snacks en el Inventario ---")
       for snack in self.snacks:
          print(snack)
 
    def get_snacks(self):
-      return self.snacks
-
-   @property
-   def snacks(self):
       return self.snacks
